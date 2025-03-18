@@ -43,14 +43,14 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bihiga1628:WEiOnRZblHuhJalO@cluster0.gbqqv.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "bihiga1628")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tebewe5743:39frOJgp7kMf6b28@cluster0.w66po.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "tebewe5743")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '861d91eb64565fee47d1322836257bdba96aadac')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '7709a824575640328a543091da04875a63be6d95')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002479259622').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -63,7 +63,7 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002001862509'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Ownersupport')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
+P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
